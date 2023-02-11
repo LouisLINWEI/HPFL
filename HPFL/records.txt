@@ -1,0 +1,108 @@
+14: edge server freq = 5 , ratio = 0.5
+15: edge server freq = 50 , ratio = 0.
+16: edge server freq = 50 , ratio = 0.5
+17: edge server freq = 50 , ratio = 1.
+21: 每个edge一个组, ratio = 0.5, sample_num_per_client = 100
+22: 2个edge一个组, ratio = 0.5, sample_num_per_client = 100
+23: 所有edge一个组, ratio = 0.5, sample_num_per_client = 100
+24: 每个edge一个组, ratio = 0.5, sample_num_per_client = 100, cifar10, 29.5
+25: 每个edge一个组, ratio = 0.5, sample_num_per_client = 200, cifar10, 42.3
+26: 2个edge一个组, ratio = 0.5, sample_num_per_client = 100, cifar10, 31.5
+27: 2个edge一个组, ratio = 0.5, sample_num_per_client = 200, cifar10, 44.5
+28: 所有edge一个组, ratio = 0.5, sample_num_per_client = 100, cifar10, 31.1
+29: 所有edge一个组, ratio = 0.5, sample_num_per_client = 200, cifar10, 36.8
+30: 所有edge一个组, ratio = 0.75, sample_num_per_client = 200, cifar10, 40.1
+31: 2个edge一个组, ratio = 0.75, sample_num_per_client = 200, cifar10, 44.5
+32: 2个edge一个组, ratio = 0.25, sample_num_per_client = 200, cifar10, 44.4
+33: 4个edge一个组, ratio = 0.5, sample_num_per_client = 200, cifar10, 16个client, 
+34: 每个edge一个组, ratio = 0.5, sample_num_per_client = 200, cifar10, 16个client, 
+36: 2个edge一个组, ratio = 0.5, sample_num_per_client = 200, cifar10, 8个client, 
+37: 所有edge一个组, ratio = 0.5, sample_num_per_client = 200, cifar10, 16个client, 
+38: 4个edge一个组, ratio = 0.25, sample_num_per_client = 200, cifar10, 16个client, 
+39: 4个edge一个组, ratio = 0.75, sample_num_per_client = 200, cifar10, 16个client, 
+40: 4个edge一个组, ratio = 0.5, sample_num_per_client = 100, mnist, 16个client,
+41: 4个edge一个组, ratio = 0.25, sample_num_per_client = 100, mnist, 16个client,
+42: 4个edge一个组, ratio = 0.75, sample_num_per_client = 100, mnist, 16个client,
+43: 每个edge一个组, ratio = 0.5, sample_num_per_client = 100, mnist, 16个client, 
+44: 所有edge一个组, ratio = 0.5, sample_num_per_client = 100, mnist, 16个client,
+45: 2个edge一个组, ratio = 0.5, sample_num_per_client = 100, mnist, 8个client, 
+47: 所有edge一个组, ratio = 0.5, sample_num_per_client = 100, mnist, 16个client, among-edge = 30
+48: 所有edge一个组, ratio = 0.5, sample_num_per_client = 100, mnist, 16个client, among-edge = 100
+49: 所有edge一个组, ratio = 0.5, sample_num_per_client = 100, mnist, 16个client, among-edge = 300
+50: 4个edge一个组, ratio = 0.5, sample_num_per_client = 3000, emnist, 16个client,
+51: 4个edge一个组, ratio = 0.5, sample_num_per_client = 200, emnist, 16个client,
+52: 4个edge一个组, ratio = 0.5, sample_num_per_client = 100, emnist, 16个client,
+55: 所有edge一个组, ratio = 0.5, sample_num_per_client = 200, emnist, 16个client,
+54: 每个edge一个组, ratio = 0.5, sample_num_per_client = 200, emnist, 16个client,
+56: 所有edge一个组, ratio = 0.0(fedavg), sample_num_per_client = 200, emnist, 16个client,
+57: 所有edge一个组, ratio = 0.0(fedavg), sample_num_per_client = 200, cifar10, 16个client,
+58: 所有edge一个组, ratio = 0.0(fedavg), sample_num_per_client = 100, mnist, 16个client,
+
+修正版本：
+59: 修正40
+60: 修正44
+63: 修正33
+62: 修正43
+64: 修正37
+65: 修正34
+66: 修正51
+67: 修正55
+68: 修正54
+69: 4个edge一个组, ratio = 0.5, sample_num_per_client = 200, cifar10, 32个client,
+70: 所有edge一个组, ratio = 0.0(fedavg), sample_num_per_client = 200, cifar10, 32个client,
+71: 4个edge一个组, ratio = 0.5, sample_num_per_client = 100, cifar10, 32个client,
+72: 每个edge一个组, ratio = 0.5, sample_num_per_client = 100, cifar10, 32个client,
+73: 调试cifar100
+74: 8个edge一个组, ratio = 0.5, sample_num_per_client = 100, cifar10, 32个client,
+75: 每个edge一个组, ratio = 0.5, sample_num_per_client = 100, cifar10, 32个client,
+76: fedavg, sample_num_per_client = 100, cifar10, 32个client,
+77: 8个edge一个组, ratio = 0.5, sample_num_per_client = 100, mnist, 32个client,
+78: 每个edge一个组, ratio = 0.5, sample_num_per_client = 100, mnist, 32个client,
+79: fedavg, sample_num_per_client = 100, mnist, 32个client,
+80: server-edge freq=100, 其余配置与79相同
+81: fedavg, sample_num_per_client = 200, cifar10, 32个client,
+82: fedavg, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+83: fedavg, sample_num_per_client = 200, mnist, 32个client, (freq: 5,10)
+84: 4个edge一个组, sample_num_per_client = 200, mnist, 32个client, (freq: 5,10)
+85: fedavg, sample_num_per_client = 200, mnist, 32个client, (freq: 5,10)
+86: 4个edge一个组, ratio=0.5, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+87: 所有edge一个组, ratio=0.5, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+88: fedavg, 4edge, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+89: 4个edge一个组, ratio=0.5, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+90: 所有edge一个组, ratio=0.5, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+92: 4edge一组，fedavg, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+91: 所有edge一组，8edge, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+93: fedavg，8edge, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+94: 4个edge一个组, ratio=0.5, sample_num_per_client = 200, emnist, 32个client, (freq: 5,10)
+95: 所有edge一个组, 4edge, ratio=0.5, sample_num_per_client = 200, emnist, 32个client, (freq: 5,10)
+96: fedavg, 4个edge, sample_num_per_client = 200, emnist, 32个client, (freq: 5,10)
+97: 8edge一组，ratio=0.5, 8edge, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+98: 8edge一组，8edge, ratio=0.5, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+99: 所有edge一组，8edge, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+100: fedavg，8edge, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+101: 4个edge一个组, ratio=0.25, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+102: 4个edge一个组, ratio=0.75, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+103: 4个edge一个组, ratio=0.25, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+104: 4个edge一个组, ratio=0.75, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+105: 4个edge一个组, ratio=0.25, sample_num_per_client = 200, emnist, 32个client, (freq: 5,10)
+106: 8edge一组，ratio=0.25, 8edge, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+107: 8edge一组，ratio=0.75, 8edge, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+108: 8edge一组，8edge, ratio=0.25, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+109: 8edge一组，8edge, ratio=0.75, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+110: 4个edge一个组, ratio=0.75, sample_num_per_client = 200, emnist, 32个client, (freq: 5,10)
+111: 8edge一组，ratio=0.5, 8edge, sample_num_per_client = 200, emnist, 32个client, (freq: 5,10)
+
+
+第二次修正（重新跑）：
+112: 4个edge一个组, 4edge, ratio=0.5, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+113: 所有edge一个组, 4edge, ratio=0.5, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+114: fedavg, 4edge, ratio=0.5, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+115: 8个edge一个组, 8edge, ratio=0.5, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+116: 所有edge一个组, 8edge, ratio=0.5, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10)
+121: fedavg, 8edge, ratio=0.5, sample_num_per_client = 100, mnist, 32个client, (freq: 5,10) 
+118: 4个edge一个组, 4edge, ratio=0.5, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+120: 所有edge一个组, 4edge, ratio=0.5, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+119: fedavg, 4edge, ratio=0.5, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+122: 8个edge一个组, 8edge, ratio=0.5, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+123: 所有edge一个组, 8edge, ratio=0.5, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)
+124: fedavg, 8edge, ratio=0.5, sample_num_per_client = 200, cifar10, 32个client, (freq: 5,10)

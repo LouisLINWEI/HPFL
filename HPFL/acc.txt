@@ -1,0 +1,54 @@
+cifar10:
+
+4 edge:
+our method: 67.6
+APFL: 63.3
+global fedavg: 36.2
+local: 65.8
+ratio=0.25: 67.6
+ratio=0.75: 67.6
+
+8 edge:
+our method: 45.9
+APFL: 37.0
+global fedavg: 26.7
+local: 44.3
+ratio=0.25: 45.9
+ratio=0.75: 45.9
+
+mnist:
+
+4 edge: 
+our method: 98.5 (86)
+APFL: 98.8 (87)
+global fedavg: 96.2 (88)
+local: 54.4 (88)
+ratio=0.25: 98.5 (103)
+ratio=0.75: 98.5 (104)
+
+8 edge:
+our method: 80.4
+APFL: 79.3
+global fedavg: 76.5
+local: 72.9
+ratio=0.25:
+ratio=0.75:
+
+emnist:
+
+4 edge:
+our method: 
+APFL:
+global fedavg:
+local:
+ratio=0.25:
+ratio=0.75:
+
+8 edge:
+our method: 94.4
+APFL: 94.9
+global fedavg: 86.7
+local: 94.5
+ratio=0.25:
+ratio=0.75:
+
