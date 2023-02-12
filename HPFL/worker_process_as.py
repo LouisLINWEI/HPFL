@@ -52,6 +52,7 @@ CHECKPOINT_ENABLED = False
 CUDA = torch.cuda.is_available()
 if CUDA:
     torch.cuda.set_device(RANK % torch.cuda.device_count())
+    print(torch.cuda.device_count())
 
 def logging(string):
     print(str(datetime.now())+' '+str(string))
@@ -106,10 +107,12 @@ def train():
     local_optimizer = torch.optim.SGD(local_model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY)
     loss_func = torch.nn.CrossEntropyLoss()
     local_loss_func = torch.nn.CrossEntropyLoss()
+    
     logging('\n\n ----- start training -----')
 
+    if RANK >= 0:
+        time.sleep(1)
     as_manager = AS_Manager(model, local_model, MASTER_ADDRESS, WORLD_SIZE, RANK, LEARNING_RATE, CLIENT_EDGE_SYNC_FREQ, EDGE_SERVER_SYNC_FREQ, CLUSTERING_FREQ, GROUP_NUM, GROUP_SIZE, EDGE_SERVER_GROUP_NUM, PERSONALIZED_RATIO)
-    
 		
     iter_id = 0
     epoch_id = 0

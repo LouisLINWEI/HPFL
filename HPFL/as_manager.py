@@ -18,7 +18,6 @@ def logging(string):
 
 class AS_Manager:
     def __init__(self, model, local_model, master_address, world_size, rank, learning_rate, client_edge_sync_frequency, edge_server_sync_frequency, clustering_frequency, group_num, group_size, edge_server_group_num, personalized_ratio):
-
         dist.init_process_group(backend='gloo', init_method=master_address, world_size=world_size, rank=rank)
         group = dist.new_group([i for i in range(world_size)])
 
