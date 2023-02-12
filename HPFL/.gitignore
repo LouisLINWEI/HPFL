@@ -1,6 +1,7 @@
 #log file
 *.log
 Logs/
+Latest_Log/
 
 #data
 data/
